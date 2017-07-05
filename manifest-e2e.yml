@@ -1,0 +1,9 @@
+---
+inherit: manifest-base.yml
+applications:
+- name: e2e-perf-sender
+  env:
+    P_EVENT_HUB_ZONE_ID: 46c94fdb-3a0d-40c9-9950-d806c548b8ba
+    P_EVENT_HUB_UAA_URL: https://8576a6f3-bbe9-4543-aa3c-cad948fe739e.predix-uaa.run.aws-usw02-dev.ice.predix.io/oauth/token
+    P_EVENT_HUB_UAA_CLIENT_ID: streaming-processor-pub
+    P_EVENT_HUB_UAA_CLIENT_SECRET: secret123

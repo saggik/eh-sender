@@ -1,0 +1,15 @@
+---
+disk: 1G
+memory: 10G
+timeout: 180
+path: target/eh-sender-0.0.1-SNAPSHOT.jar
+buildpack: https://github.com/cloudfoundry/java-buildpack.git
+instances: 1
+env:
+  MAX_DIRECT_MEMORY: 4294967296
+  EVENTHUB_ENABLE_DEBUG: false
+  P_EVENT_HUB_HOST: event-hub-aws-usw02-cf3-dev.data-services.predix.io
+  P_EVENT_HUB_PORT: 443
+  P_EVENT_HUB_UAA_URL: https://312959b7-8149-4fdf-a1eb-2f037607c41a.predix-uaa.run.aws-usw02-dev.ice.predix.io/oauth/token
+  P_EVENT_HUB_UAA_CLIENT_ID: superuser
+  P_EVENT_HUB_UAA_CLIENT_SECRET: 1234

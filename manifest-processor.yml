@@ -1,0 +1,6 @@
+---
+inherit: manifest-base.yml
+applications:
+- name: perf-sender-processor
+  env:
+    P_EVENT_HUB_ZONE_ID: 9956f3ce-a1f2-4e79-a356-56a1aa25d617
